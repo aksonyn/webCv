@@ -1,0 +1,147 @@
+:root{
+    --black:#000000;
+    --yellow:rgba(255, 255, 0, 0.85)
+}
+
+@font-face {
+    font-family: TerminessTTF Nerd Font;
+    src: local("TerminessTTF Nerd Font"),
+    local("TerminessTTF Nerd Font");
+}
+
+body{
+    font-size: 18px;
+    font-family: "TerminessTTF Nerd Font";
+    background-color: var(--black);
+    margin: 0;
+}
+
+/*navbar*/
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    width: 100%;
+    height: 84px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    box-shadow: 0px 0px 16px 3px #FFFF00;
+}
+
+.navbar-left img{
+    padding-left: 24px;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.navbar-center ul{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.navbar-center ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar-center ul li a:hover{
+    border-bottom: 3px solid var(--yellow);
+}
+
+button {
+    transition-duration: 0.4s;
+    border: 3px solid var(--yellow);
+}
+  
+button:hover {
+    background-color: #000000;
+    border: 3px solid var(--yellow);
+    cursor: pointer;
+}
+
+button a{
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: var(--black);
+}
+
+button a:hover{
+    color: var(--yellow);
+}
+
+
+.cvButton{
+    font-family: "TerminessTTF Nerd Font";
+    font-weight: bold;
+    font-size: 18px;
+    top:17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 7px 28px;
+    background:var(--yellow);
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+/*home*/
+
+section{
+    display: flex;
+    text-align: center;
+    margin-top: 85px;
+    padding-top: 40px;
+    background-image: url(../icons/backgroundbgpage.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 525px;
+}
+
+#profile-photo {
+    padding-left: 45px;
+}
+
+#profile-photo img{
+    max-width: 100%;
+    height: auto;
+}
+
+#basic-info{
+    padding-left: 25px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#basic-info h1{
+   font-size: 50px;
+   font-weight: lighter;
+   margin-bottom: 5px;
+}
+
+#basic-info h2{
+    font-size: 45px;
+    font-weight: lighter;
+    margin:0 0 0 0;
+}
+
+#basic-info p{
+    font-size: 23px;
+}
+
+.hireMeButton{
+    font-family: "TerminessTTF Nerd Font";
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    padding: 7px 28px;
+    background:var(--yellow);
+    border-radius: 16px;
+    margin-top: 25px;
+}
